@@ -21,6 +21,9 @@ h4,
 h5 {
     color: #333;
 }
+.header h3{
+    font-size: 1.5em;
+}
 p,
 label {
     color: #444;
@@ -36,6 +39,14 @@ input[type="file"],
 input[type="number"],
 textarea {
     width: 400px;
+    transition: 0.5s;
+}
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="file"]:hover,
+input[type="number"]:hover,
+textarea:hover {
+    background-color: #f0ebf8;
 }
 
 /* Page Header */
@@ -50,10 +61,12 @@ textarea {
 }
 .form-container {
     background-color: #fdfdfd;
+    border-radius: 10px;
     width: 60%;
     margin: 0 auto;
     position: relative;
     top: -62px;
+    box-shadow: #444 2px 2px 20px;
 }
 textarea {
     padding: 15px;
